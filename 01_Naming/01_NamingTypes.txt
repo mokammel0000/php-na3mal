@@ -1,0 +1,10 @@
+StudlyCaps = PascalCase 
+
+camelCase
+
+snake_case
+SCREAMING_SNAKE_CASE
+
+kebab-case
+SCREAMING-KEBAB-CASE
+   we can't use it in php and other programming languages; '-' is a special character
