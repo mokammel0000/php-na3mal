@@ -16,7 +16,7 @@
     <div class="container">
         <?php
 
-        /* 
+        /*
         1- open connection to the server/ connection to mysql
             + use the selected shceme.
         2- send query to the DB.
@@ -36,7 +36,7 @@
             echo $e->getFile() . '<br>';
             //echo $e->getTrace() .'<br>';
         }
-        //returning an information about this connection to use it when u fetch data from this connection 
+        //returning an information about this connection to use it when u fetch data from this connection
         //we are here trying to connect to the local host server, cause it's the only server we have.
         //note u can have more than one connection in your page....
 
@@ -61,7 +61,7 @@
             echo 'No posts found';
         }
         mysqli_close($connect);
-        // close a spesific connection, u may have several connections in one page... 
+        // close a spesific connection, u may have several connections in one page...
         ?>
 
     </div>

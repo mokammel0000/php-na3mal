@@ -1,12 +1,13 @@
 <?php
+
 include 'Classes/Product.php'; // later, you can use autoload to include files automatiacally
 
 
 //new Product;              // create a new object from the Product Class
 //$prod1 = new Product;     //initalize this object to a variable(object) named $prod1
 // $prod1 = new Product();  //it's recommended to put () at the end, however u can remove them
-                            // () indicates to the constructor that u want to call s
-                            // $prod1 is variable, and it's datatype is OBJECT
+// () indicates to the constructor that u want to call s
+// $prod1 is variable, and it's datatype is OBJECT
 
 // $prod1-> name = "Laptop Bag";
 // $prod1-> stock = 200;

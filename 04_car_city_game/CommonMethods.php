@@ -6,6 +6,7 @@ trait CommonMethods
     {
         echo 'Foo Method';
     }
+
     public function print_this()
     {
         echo '<pre>';

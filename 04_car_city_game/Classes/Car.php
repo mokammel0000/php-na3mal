@@ -13,7 +13,7 @@ class Car
 
     public function __construct($color, $position, $speed = 0)
     {
-        //optional parameter has it's own value from the method signature, 
+        //optional parameter has it's own value from the method signature,
         //if you don't pass a value to it, no problem, because it has it's own value....
         $this->color = $color;
         $this->position = $position;

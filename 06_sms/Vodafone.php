@@ -1,4 +1,5 @@
 <?php
+
 class Vodafone implements SMS
 {
     public function sendnew($msg)

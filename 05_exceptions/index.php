@@ -11,22 +11,22 @@ class LimitException extends Exception
 
 function transfer($person, $amount, $dailyLim)
 {
-    // without using Exceptions: 
+    // without using Exceptions:
     /*
     if($person->budget < $amount){
         return [
-            'status'=> false, 
+            'status'=> false,
             'messege'=>'your budget is insuffesunt'
         ];
     }
     if($person->dailyLimit > $dailyLim){
         return[
-            'status'=> false, 
+            'status'=> false,
             'messege'=>'you are exceeding your daily limit'
         ];
     }
     return[
-        'status'=> true, 
+        'status'=> true,
         'messege'=>'succsesful operation'
     ];
     */

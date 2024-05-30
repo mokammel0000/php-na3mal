@@ -45,7 +45,8 @@ if (isset($_POST['sign'])) {
                 <div class="input-group-prepend">
                     <span class="input-group-text">@</span>
                 </div>
-                <input type="text" class="form-control " id="validationServerUsername" placeholder="Username" required name="username">
+                <input type="text" class="form-control " id="validationServerUsername" placeholder="Username" required
+                    name="username">
                 <!-- <div class="invalid-feedback"> Please choose a username. </div> -->
             </div>
         </div>

@@ -1,6 +1,6 @@
 <?php
 /*
-#the best practise in php is to put every class in a specific file, 
+#the best practise in php is to put every class in a specific file,
     make the name of the file as same as the class name...
     and put all the class files in a folder that's name is classes (to autoload them laterlay).
 
@@ -29,7 +29,7 @@ class Product
 
     //in php 8, we can do that
     //put the class properties directly in the parameters
-    // public function __construct($this->name, $this->price, $this->stock, $this->desc) 
+    // public function __construct($this->name, $this->price, $this->stock, $this->desc)
     // {
     // }
 

@@ -4,37 +4,37 @@ require 'partitials\dbconnection.php';
 
 
 if (isset($_POST['updateBtn'])) {
-  if (!empty($_FILES['photo']['name'])) {
-    $photoPath = 'images/' . time() . $_FILES['photo']['name'];
-    move_uploaded_file($_FILES['photo']['tmp_name'], $photoPath);
-  }
+    if (!empty($_FILES['photo']['name'])) {
+        $photoPath = 'images/' . time() . $_FILES['photo']['name'];
+        move_uploaded_file($_FILES['photo']['tmp_name'], $photoPath);
+    }
 
-  $data = [
-    'id' => $_GET['id'],
-    'name' => $_POST['name'],
-    'price' => $_POST['price'],
-    'stock' => $_POST['stock'],
-    'description' => $_POST['description'],
-    'created_date' => date("Y-m-d")
-  ];
+    $data = [
+      'id' => $_GET['id'],
+      'name' => $_POST['name'],
+      'price' => $_POST['price'],
+      'stock' => $_POST['stock'],
+      'description' => $_POST['description'],
+      'created_date' => date("Y-m-d")
+    ];
 
-  if (isset($photoPath)) {
-    $data['photo'] = $photoPath;
-  }
+    if (isset($photoPath)) {
+        $data['photo'] = $photoPath;
+    }
 
-  $columns = array_keys($data);
-  $placeholders = array_map(function ($item) {
-    return "$item= :$item";
-  }, $columns);
+    $columns = array_keys($data);
+    $placeholders = array_map(function ($item) {
+        return "$item= :$item";
+    }, $columns);
 
-  $placeholders = implode(',', $placeholders);
+    $placeholders = implode(',', $placeholders);
 
 
 
-  $query = "UPDATE products SET $placeholders WHERE id = :id";
-  $stm  = $con->prepare($query);
-  $stm->execute($data);
-  echo '<div class="alert alert-success" role="alert">
+    $query = "UPDATE products SET $placeholders WHERE id = :id";
+    $stm  = $con->prepare($query);
+    $stm->execute($data);
+    echo '<div class="alert alert-success" role="alert">
   the product has been Updated sucssesfuly!
   </div>';
 }

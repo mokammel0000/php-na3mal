@@ -28,7 +28,7 @@ require 'partitials\dbconnection.php';
         }
     }
 
-    ?>
+?>
     <form action="" method="post">
         <div class="col-md-4 mb-3">
             <label>Email address</label>

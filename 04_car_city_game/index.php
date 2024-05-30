@@ -30,14 +30,14 @@ spl_autoload_register(function ($class) {
     // }
 
     $grayCar = new Car('gray', 50);
-    $grayCar->show();
-    $orangeCar = new Car('green', 62);
-    $orangeCar->show();
-    $cianCar = new Car('red', 74);
-    $cianCar->show();
-    $orangeCar = new Suv('orange', 86);
-    $orangeCar->show();
-    ?>
+$grayCar->show();
+$orangeCar = new Car('green', 62);
+$orangeCar->show();
+$cianCar = new Car('red', 74);
+$cianCar->show();
+$orangeCar = new Suv('orange', 86);
+$orangeCar->show();
+?>
 
 </body>
 

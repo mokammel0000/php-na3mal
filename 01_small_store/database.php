@@ -1,4 +1,5 @@
 <?php
+
 $products = [
     '001' => [
         'name' => 'Bag',

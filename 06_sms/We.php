@@ -1,4 +1,5 @@
 <?php
+
 class We implements SMS
 {
     public function sendnew($msg)
@@ -6,6 +7,7 @@ class We implements SMS
         // We Sdk
         echo $msg . '<br>';
     }
+
     public function deleteSms($msg)
     {
         // We Sdk
